@@ -1,0 +1,841 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="shortcut icon" href="img/website_logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<!--On clicking the latest release section dropdown menu, you will get two options either to play it or to close it. While clicking on
+     Play now option it will redirect to new webpage PLAYLIST.HTML . Secondly,if you want to visit the playlist you just have to click on playlist
+    dropdwon menu which is in blue color on the right corner of the webpage and then click on open now option it will directly take you to 
+    the PLAYLIST.HTML -->
+<!--while clicking on artists image will redirect you to the PLAYLIST.HTML webpage-->
+
+<!--Only one music can be played using footer section.Once you click on play button music will start playing and you can increase
+or decrease the volume accordingly and can also pause it where you require.-->
+
+<!--the page is responsive.Try reducing the width of the page. Other section will collapse and a "playlist button will be shown.
+ Clicking on this playlist button, you will be shown the second section of the webpage-->
+
+<body>
+    <!--Background Animation-->
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <!--Navbar-->
+    <nav class="navbar">
+        <div class="navtitle">
+            <div class="weblogo">
+                <img src="img/website_logo.png">
+            </div>
+            <div class="webname">
+                <h2 style="color: rgb(134, 38, 59);">
+                    MY
+                </h2>
+                <h6 style="color: rgb(173, 119, 131);">
+                    Music Player
+                </h6>
+            </div>
+        </div>
+        <div class="favs">
+            <h4>
+                Favourites
+            </h4>
+        </div>
+        <div class="sbar">
+            <div>
+                <i class="fas fa-search search-ico"></i>
+            </div>
+            <input type="text" name="search" placeholder="Search">
+            <div>
+                <i class="fas fa-microphone mic-ico"></i>
+            </div>
+        </div>
+        <div class="bell">
+            <img src="img/bell_icon.svg">Notifications
+
+        </div>
+        <div class="profile">
+            <img src="img/profile_picture.jpeg">
+        </div>
+    </nav>
+    <main>
+        <!-- first section -->
+        <aside class="one first">
+            <div class="outer">
+                <div class="carousel">
+                    <img src="img/top2.jpeg">
+                    <img src="img/top1.jpeg">
+                    <img src="img/top3.jpeg">
+                </div>
+            </div>
+    <!--latest release section -->
+            <div class="latest">
+                <h1 style="margin-bottom: 12px;">
+                    Latest Release
+                </h1>
+                <div class="latest-content">
+                    <div class="card">
+                        <div>
+                            <img src="img/tere sang yara.jpg">
+                            <div class="play-button">
+                                <i class="fas fa-play" style="width:45%; height:45%; display:inline-block"></i>
+                            </div>
+                        </div>
+                        <div class="songs">
+                            <h3>
+                                TERE SANG YAARA
+                            </h3>
+                            <p>
+                                6 Jul 2016
+                            </p>
+                        </div>
+                        <div class="options">
+                            <label for="latest-release-checkbox"><i class="fas fa-ellipsis-h"></i></label>
+                            <input type="checkbox" id="latest-release-checkbox">
+                            <div class="latest-dropdown">
+                                <div class="ditem">
+                                    <p><i class="fas fa-play-circle"></i> <a href="Playlist.html">Play
+                                            Now</a></p>
+                                </div>
+                                <hr>
+                                <div class="ditem">
+                                    <p><a href="index.html" style="color:rgb(175, 68, 6); font-weight:bolder;">Close</a></p>
+                                </div>
+                            </div>
+                            <p>
+                                4:58
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <img src="img/rollinginthedeep.jpeg">
+                            <div class="play-button">
+                                <i class="fas fa-play" style="width:45%; height:45%; display:inline-block"></i>
+                            </div>
+                        </div>
+                        <div class="songs">
+                            <h3>
+                               ROLLING IN THE DEEP
+                            </h3>
+                            <p>
+                                29 Nov 2010
+                            </p>
+                        </div>
+                        <div class="options">
+                            <label for="latest-release-checkbox2"><i class="fas fa-ellipsis-h"></i></label>
+                            <input type="checkbox" id="latest-release-checkbox2">
+                            <div class="latest-dropdown">
+                                <div class="ditem">
+                                    <p><i class="fas fa-play-circle"></i> <a href="Playlist.html">Play
+                                            Now</a></p>
+                                </div>
+                                <hr>
+                                <div class="ditem">
+                                    <p><a href="index.html" style="color:rgb(175, 68, 6); font-weight:bolder;">Close</a></p>
+                                </div>
+                            </div>
+                            <p>
+                                3:48
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <img src="img/tera ban jaunga.jpg">
+                            <div class="play-button">
+                                <i class="fas fa-play" style="width:45%; height:45%; display:inline-block"></i>
+                            </div>
+                        </div>
+                        <div class="songs">
+                            <h3>
+                                TERA BAN JAUNGA
+                            </h3>
+                            <p>
+                                17 Jun 2019  
+                            </p>
+                        </div>
+                        <div class="options">
+                            <label for="latest-release-checkbox3"><i class="fas fa-ellipsis-h"></i></label>
+                            <input type="checkbox" id="latest-release-checkbox3">
+                            <div class="latest-dropdown">
+                                <div class="ditem">
+                                    <p><i class="fas fa-play-circle"></i> <a href="Playlist.html">Play
+                                            Now</a></p>
+                                </div>
+                                <hr>
+                                <div class="ditem">
+                                    <p><a href="index.html" style="color:rgb(175, 68, 6); font-weight:bolder;">Close</a></p>
+                                </div>
+                            </div>
+                            <p>
+                                3:02
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <img src="img/storyofmylife.jpg">
+                            <div class="play-button">
+                                <i class="fas fa-play" style="width:45%; height:45%; display:inline-block"></i>
+                            </div>
+                        </div>
+                        <div class="songs">
+                            <h3>
+                                STORY OF MY LIFE
+                            </h3>
+                            <p>
+                                28 Oct 2013
+                            </p>
+                        </div>
+                        <div class="options">
+                            <label for="latest-release-checkbox4"><i class="fas fa-ellipsis-h"></i></label>
+                            <input type="checkbox" id="latest-release-checkbox4">
+                            <div class="latest-dropdown">
+                                 <div class="ditem">
+                                    <p><i class="fas fa-play-circle"></i> <a href="Playlist.html">Play
+                                            Now</a></p>
+                                </div>
+                                <hr>
+                                <div class="ditem">
+                                    <p><a href="index.html" style="color:rgb(175, 68, 6); font-weight:bolder;">Close</a></p>
+                                </div>
+                            </div>
+                            <p>
+                                4:05
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+<!-- popular artists section -->
+            <div class="artists">
+                <h1 style="margin-bottom: 12px;">
+                    Popular Artists
+                </h1>
+                <div class="artist-content">
+                    <a href="Playlist.html">
+                        <div>
+                            <img src="img/PA1.jpg">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>
+                                BAD BUNNY
+                            </p>
+                        </div>
+                    </a>
+                    <a href="Playlist.html">
+                        <div>
+                            <img src="img/PA2.jpeg">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>
+                               DRAKE
+                            </p>
+                        </div>
+                    </a>
+                    <a href="Playlist.html">
+                        <div>
+                            <img src="img/PA3.jpeg" width="15vw" height="10vw">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>
+                                BADSHAH
+                            </p>
+                        </div>
+                    </a>
+                    <a href="Playlist.html">
+                        <div>
+                            <img src="img/PA4.jpg">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>
+                                BTS
+                            </p>
+                        </div>
+                    </a>
+                    <a href="Playlist.html">
+                        <div>
+                            <img src="img/PA5.jpeg">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>
+                                NEHA KAKKAR
+                            </p>
+                        </div>
+                    </a>
+                    <a href="Playlist.html">
+                        <div>
+                            <img src="img/PA6.jpg">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>
+                                SHREYA GHOSHAL
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+<!-- music themes part --->
+            <div class="themes">
+                <div class="stations">
+                    <div id="purple1">
+                        <div id="purple2">
+                            <div id="purple3">
+                                <img src="img/website_logo.png">
+                                <p>Fusions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tmain">
+                    <div class="tcontent">
+                        <img src="img/chill.jpeg">
+                        <p>Vibe</p>
+                    </div>
+                    <div class="tcontent">
+                        <img src="img/rock.jpg">
+                        <p>Rock</p>
+                    </div>
+                    <div class="tcontent">
+                        <img src="img/love.jpg">
+                        <p>Love</p>
+                    </div>
+                    <div class="tcontent">
+                        <img src="img/pop.jpeg">
+                        <p>Pop</p>
+                    </div>
+                    <div class="tcontent">
+                        <img src="img/retro.jpg">
+                        <p>Retro</p>
+                    </div>
+                    <div class="tcontent">
+                        <img src="img/workout.jpg">
+                        <p>GYM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="themes2">
+                <div class="outdiv">
+                    <div class="indiv">
+                        <span>party</span>
+                    </div>
+                </div>
+                <div class="outdiv">
+                    <div class="indiv">
+                        <span>Electronic</span>
+                    </div>
+                </div>
+                <div class="outdiv">
+                    <div class="indiv">
+                        <span>Travel</span>
+                    </div>
+                </div>
+            </div>
+    
+    <!-- latest punjabi section -->
+    <div class="lan">
+        <h1 class="language-heading">
+            LATEST PUNJABI
+        </h1>
+        <div class="lancontent">
+
+            <div>
+                <img src="img/waliyan.jpeg">
+                <p>WALIYAN</p>
+                <p>2019</p>
+            </div>
+            <div>
+                <img src="img/teriyan.jpg">
+                <p>TERIYAN DEEDAAN</p>
+                <p>2020</p>
+            </div>
+            <div>
+                <img src="img/3peg.jpg">
+                <p>  3 PEG</p>
+                <p>2016</p>
+            </div>
+            <div>
+                <img src="img/galnikadni.jpg">
+                <p>GAAL NI KADNI</p>
+                <p>2017</p>
+            </div>
+            <div>
+                <img src="img/sabfadejange.jpg">
+                <p>SAB FADE JANGE</p>
+                <p>2018</p>
+            </div>
+            <div>
+                <img src="img/khadtainu.jpeg">
+                <p>KHAD TAINU MAIN DASSA</p>
+                <p>2021</p>
+            </div>
+        </div>
+    </div>      
+            
+<!-- this is the hindi section -->
+            <div class="lan">
+                <h1 class="language-heading">
+                    LATEST HINDI
+                </h1>
+                <div class="lancontent">
+
+                    <div>
+                        <img src="img/baarish.jpeg">
+                        <p>BAARISH</p>
+                        <p>2019</p>
+                    </div>
+                    <div>
+                        <img src="img/galiyaan.jpg">
+                        <p>GALIYAAN</p>
+                        <p>2014</p>
+                    </div>
+                    <div>
+                        <img src="img/giveme some sunshine.jpg">
+                        <p>GIVE ME SOME SUNSHINE</p>
+                        <p>2009</p>
+                    </div>
+                    <div>
+                        <img src="img/kaun tujhe.jpg">
+                        <p>KAUN TUJHE</p>
+                        <p>2016</p>
+                    </div>
+                    <div>
+                        <img src="img/tera ban jaunga.jpg">
+                        <p>TERA BAN JAUNGA</p>
+                        <p>2019</p>
+                    </div>
+                    <div>
+                        <img src="img/tere sang yara.jpg">
+                        <p>TERE SANG YAARA</p>
+                        <p>2016</p>
+                    </div>
+                </div>
+            </div>
+
+    <!-- latest english section -->
+            <div class="lan">
+                <h1 class="language-heading">
+                    LATEST ENGLISH
+                </h1>
+                <div class="lancontent">
+                    <div>
+                        <img src="img/seeyouagain.jpeg">
+                        <p>SEE YOU AGAIN</p>
+                        <p>2015</p>
+                    </div>
+                    <div>
+                        <img src="img/rollinginthedeep.jpeg">
+                        <p>ROLLING IN THE DEEP</p>
+                        <p>2010</p>
+                    </div>
+                    <div>
+                        <img src="img/storyofmylife.jpg">
+                        <p>STORY OF MY LIFE</p>
+                        <p>2013</p>
+                    </div>
+                    <div>
+                        <img src="img/loveyouthewayyoulie.jpg">
+                        <p>LOVE YOU THE WAY YOU LIE</p>
+                        <p>2010</p>
+                    </div>
+                    <div>
+                        <img src="img/closer.png">
+                        <p>CLOSER</p>
+                        <p>2004</p>
+                    </div>
+                    <div>
+                        <img src="img/thinkingoutloud.jpeg">
+                        <p>THINKING OUT LOUD</p>
+                        <p>2014</p>
+                    </div>
+                </div>
+            </div>
+
+    <!-- MASHUP section -->
+    <div class="lan">
+        <h1 class="language-heading">
+            MASH-UPS
+        </h1>
+                <div class="lancontent">
+
+                    <div>
+                        <img src="img/lovemashup.jpg">
+                        <p>THE LOVE MASHUP</p>
+                        <p>2019</p>
+                    </div>
+                    <div>
+                        <img src="img/loveyatri.jpeg">
+                        <p>LOVEYATRI MASHUP</p>
+                        <p>2018</p>
+                    </div>
+                    <div>
+                        <img src="img/terasuroor.jpeg">
+                        <p>TERA SUROOR</p>
+                        <p>2015</p>
+                    </div>
+                    <div>
+                        <img src="img/roymashup.jpeg">
+                        <p>ROY MASHUP</p>
+                        <p>2015</p>
+                    </div>
+                    <div>
+                        <img src="img/ekvillianmashup.jpg">
+                        <p>EK VILLIAN MASHUP</p>
+                        <p>2014</p>
+                    </div>
+                    <div>
+                        <img src="img/gundaymashup.jpg">
+                        <p>GUNDAY MASHUP</p>
+                        <p>2014</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+<!-- second section -->
+        <label for="plist"><i class="fas fa-angle-double-left"></i>Playlist</label>
+       <input type="checkbox" id="plist">
+       <aside class="one second">
+
+            <div class="head">
+                <h1 style="color: rgb(249, 208, 253);">Playlist</h1>
+                <h4>
+                    <a href="#qbox">Playlist <i class="fas fa-chevron-circle-down"></i></a>
+                </h4>
+            </div>
+            <div class="queopt" id="qbox">
+                <p><a href="Playlist.html" style="color:#bb54a1; font-weight:bolder;">Open Now</a></p>
+                <hr>
+                <p><a href="#" style="color:rgb(230, 19, 19); font-weight:bolder;">Close</a></p>
+            </div>
+            <div class="plistcon">
+                <div class=pitem>
+                    <div class="lcon">
+                        <div style="margin-right:4px;">
+                            01
+                        </div>
+                        <div class="cover">
+                            <img src="img/rollinginthedeep.jpeg">
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                             ROLLING IN THE DEEP
+                            </div>
+                            <p>
+                                Adele
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rcon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class=pitem>
+                    <div class="lcon">
+                        <div style="margin-right:4px;">
+                            02
+                        </div>
+                        <div class="cover">
+                            <img src="img/tera ban jaunga.jpg">
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                TERA BAN JAUNGA
+                            </div>
+                            <p>
+                                Tulsi Kumar
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rcon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class=pitem>
+                    <div class="lcon">
+                        <div style="margin-right:4px;">
+                            03
+                        </div>
+                        <div class="cover">
+                            <img src="img/seeyouagain.jpeg">
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                SEE YOU AGAIN
+                            </div>
+                            <p>
+                                Wiz Khalifa
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rcon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class=pitem>
+                    <div class="lcon">
+                        <div style="margin-right:4px;">
+                            04
+                        </div>
+                        <div class="cover">
+                            <img src="img/storyofmylife.jpg">
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                             STORY OF MY LIFE
+                            </div>
+                            <p>
+                                One Direction
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rcon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class=pitem>
+                    <div class="lcon">
+                        <div style="margin-right:4px;">
+                            05
+                        </div>
+                        <div class="cover">
+                            <img src="img/tere sang yara.jpg">
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                             TERE SANG YAARA
+                            </div>
+                            <p>
+                                Atif Aslam
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rcon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class=pitem>
+                    <div class="lcon">
+                        <div style="margin-right:4px;">
+                            06
+                        </div>
+                        <div class="cover">
+                            <img src="img/thinkingoutloud.jpeg">
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                THINKING OUT LOUD
+                            </div>
+                            <p>
+                                Ed Sheeran
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rcon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class=pitem>
+                    <div class="lcon">
+                        <div style="margin-right:4px;">
+                            07
+                        </div>
+                        <div class="cover">
+                            <img src="img/loveyouthewayyoulie.jpg">
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                LOVE YOU THE WAY YOU LIE
+                            </div>
+                            <p>
+                                Eminem
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rcon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class=pitem>
+                    <div class="lcon">
+                        <div style="margin-right:4px;">
+                            08
+                        </div>
+                        <div class="cover">
+                            <img src="img/kaun tujhe.jpg">
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                KAUN TUJHE
+                            </div>
+                            <p>
+                                Palak Muchhal
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rcon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class=pitem>
+                    <div class="lcon">
+                        <div style="margin-right:4px;">
+                            09
+                        </div>
+                        <div class="cover">
+                            <img src="img/giveme some sunshine.jpg">
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                               GIVE ME SOME SUNSHINE
+                            </div>
+                            <p>
+                                Sharman Joshi
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rcon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class=pitem>
+                    <div class="lcon">
+                        <div style="margin-right:4px;">
+                            10
+                        </div>
+                        <div class="cover">
+                            <img src="img/galiyaan.jpg">
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                GALIYAAN
+                            </div>
+                            <p>
+                                Ankit Tiwari
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rcon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class=pitem>
+                    <div class="lcon">
+                        <div style="margin-right:4px;">
+                            11
+                        </div>
+                        <div class="cover">
+                            <img src="img/baarish.jpeg">
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                BAARISH
+                            </div>
+                            <p>
+                                Mohammed Irfan
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rcon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class=pitem>
+                    <div class="lcon">
+                        <div style="margin-right:4px;">
+                            12
+                        </div>
+                        <div class="cover">
+                            <img src="img/PA4.jpg">
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                Golden
+                            </div>
+                            <p>
+                                BTS
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rcon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+    
+    <!-- footer part. -->
+   
+    <footer>
+        <div class="activesong">
+            <div id="sgimg">
+                <img src="img/galiyaan.jpg">
+            </div>
+            <div class="sgdesc">
+                <div>
+                    GALIYAAN
+                </div>
+                <div id="rm">
+                    ANKIT TIWARI
+                </div>
+            </div>
+            <div class="fticon">
+                <span>
+                    <i class="far fa-heart"></i>
+                </span>
+                <span>
+                    <i class="fas fa-ban"></i>
+                </span>
+            </div>
+        </div>
+        <div class="player">
+            <audio controls>
+                <source src="audio/music.mp3" type="audio/mp3">
+            </audio> 
+        </div>
+        <div class="ext">
+            <div> <i class="fas fa-list-ul"></i></div>
+            <div> <i class="fa fa-eject"></i></div>
+            <div><i class="fa fa-music" ></i></div>
+            <div><i class="fas fa-random"></i></div>
+            <div><i class="fas fa-redo"></i></div>
+        </div>
+    </footer>
+</body>
+</html>
